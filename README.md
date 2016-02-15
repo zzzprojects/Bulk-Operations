@@ -1,4 +1,4 @@
-## What's .NET Bulk Operations?
+## What's C# Bulk Operations?
 The library offers high performance operations such as Bulk Insert, Update, Delete and Merge in a database.
 
 **Who Need It?**
