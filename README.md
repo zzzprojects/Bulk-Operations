@@ -75,7 +75,6 @@ You have a list of entity to insert but SqlBulkCopy doesn't support entity and l
 Create a generic bulk operations with your entity type and use lambda expression for your column input, output and primary key mapping.
 
 ```csharp
-// Support Generic Type && Lambda Expressions
 var bulk = new BulkOperation<Customer>(connection);
 bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
 bulk.ColumnOutputExpression = c => c.CustomerID;
