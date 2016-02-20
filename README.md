@@ -1,4 +1,4 @@
-## Bulk Operations
+## C# Bulk Operations
 High performance C# Bulk Operations in SQL with hundreds of flexible features missing from SqlBulkCopy.
  - Auditing
  - Case Sensitivity
