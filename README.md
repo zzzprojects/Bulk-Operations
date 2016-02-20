@@ -9,12 +9,12 @@ High performance C# Bulk Operations in SQL with hundreds of flexible features mi
 ##### Scalable
 SQL Server - Benchmarks
 
-| Bulk Operations | 1,000 Rows | 10,000 Rows | 100,000 Rows | 1,000,000 Rows |
-| --------------- | ---------: | ----------: | -----------: | -------------: |
-|**Insert**       | 6 ms       | 25 ms       | 200 ms       | 2,000 ms       |
-|**Update**       | 50 ms      | 80 ms       | 575 ms       | 6,500 ms       |
-|**Delete**       | 45 ms      | 70 ms       | 625 ms       | 6,800 ms       |
-|**Merge**        | 65 ms      | 160 ms      | 1,200 ms     | 12,000 ms      |
+| Operations | 1,000 Rows | 10,000 Rows | 100,000 Rows | 1,000,000 Rows |
+| ---------- | ---------: | ----------: | -----------: | -------------: |
+|**Insert**  | 6 ms       | 25 ms       | 200 ms       | 2,000 ms       |
+|**Update**  | 50 ms      | 80 ms       | 575 ms       | 6,500 ms       |
+|**Delete**  | 45 ms      | 70 ms       | 625 ms       | 6,800 ms       |
+|**Merge**   | 65 ms      | 160 ms      | 1,200 ms     | 12,000 ms      |
 
 > _As fast as SqlBulkCopy for insert but with way more capabilities_
 
