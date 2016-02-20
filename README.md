@@ -104,7 +104,7 @@ bulk.BulkMerge(dt);
 ```
 
 ##### Readability
-Remove useless code which would have required to create your own mapping otherwise and keep the essentials.
+Remove useless code which would have required to create your own mapping and keep the essentials.
 
 ## Support
 Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
