@@ -58,6 +58,7 @@ Map your identity column with output direction.
 
 ```
 var bulk = new BulkOperation(connection);
+
 bulk.ColumnMappings.Add("CustomerID", ColumnMappingDirectionType.Output);
 // ... mappings ...
 
@@ -76,9 +77,11 @@ Create a generic bulk operations with your entity type and use lambda expression
 
 ```csharp
 var bulk = new BulkOperation<Customer>(connection);
+
 bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
 bulk.ColumnOutputExpression = c => c.CustomerID;
 bulk.ColumnPrimaryKeyExpression = c => c.Code;
+
 bulk.BulkMerge(customers);
 ```
 
@@ -93,9 +96,10 @@ You have a DataTable which columns name match name in the database but SqlBulkCo
 Turn off case sensitivity with **IsCaseSensitive** property.
 
 ```csharp
-// Support Generic Type && Lambda Expressions
 var bulk = new BulkOperation(connection);
+
 bulk.IsCaseSensitive = false;
+
 bulk.BulkMerge(dt);
 ```
 
