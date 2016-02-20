@@ -113,19 +113,19 @@ Contact our outstanding customer support for any request. We usually answer with
 ## FREE vs PRO
 _PRO Version unlocked for the current month_
 
-Features                    | Free Version | [PRO Version](http://bulk-operations.net/#pro)
---------                    | :----------: | :-------------: |
-DeleteFromQuery             | Yes          | Yes
-UpdateFromQuery             | Yes          | Yes
-Bulk Insert                 | No           | Yes
-Bulk Update                 | No           | Yes
-Bulk Delete                 | No           | Yes
-Bulk Merge                  | No           | Yes
-Bulk SaveChanges            | No           | Yes
-Bulk Synchornize            | No           | Yes
-Commercial License          | Yes          | Yes
-Royalty-Free                | Yes          | Yes
-Support & Upgrades (1 year) | No           | Yes
+Features                    | [PRO Version](http://bulk-operations.net/#pro)
+--------                    | :-------------: |
+Bulk Insert                 | Yes
+Bulk Update                 | Yes
+Bulk Delete                 | Yes
+Bulk Merge                  | Yes
+Bulk SaveChanges            | Yes
+Bulk Synchornize            | Yes
+DeleteFromQuery             | Yes
+UpdateFromQuery             | Yes
+Commercial License          | Yes
+Royalty-Free                | Yes
+Support & Upgrades (1 year) | Yes
 
 Learn more about the **[PRO Version](http://bulk-operations.net/#pro)**
 
