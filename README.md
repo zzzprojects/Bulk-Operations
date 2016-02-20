@@ -1,5 +1,5 @@
 ## Bulk Operations
-High performance SQL Bulk Operations with hundreds of flexible features missing from SqlBulkCopy.
+High performance C# Bulk Operations in SQL with hundreds of flexible features missing from SqlBulkCopy.
  - Auditing
  - Case Sensitivity
  - Entity DataSource / Lambda Mapping
