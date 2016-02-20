@@ -1,4 +1,4 @@
-## Bulk-Operations
+## Bulk Operations
 High performance SQL Bulk Operations with hundreds of flexible features missing from SqlBulkCopy.
  - Auditing
  - Case Sensitivity
@@ -147,7 +147,7 @@ Help us to make this library a **MUST-HAVE** by contributing
 
 **Bulk Operations**
 - [EntityFramework Extensions](http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/)
-- [Bulk-Operations](http://www.zzzprojects.com/products/dotnet-development/bulk-operations/)
+- [Bulk Operations](http://www.zzzprojects.com/products/dotnet-development/bulk-operations/)
 
 **Expression Evaluator**
 - [Eval-SQL.NET](https://github.com/zzzprojects/Eval-SQL.NET)
