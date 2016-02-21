@@ -1,4 +1,4 @@
-## Improve SQL insert, update, delete and merge performance and overcome SqlBulkCopy limitation
+## Improve SQL insert, update, delete and merge performance and overcome SqlBulkCopy limitations
  - Auditing
  - Case Sensitivity
  - Entity DataSource / Lambda Mapping
