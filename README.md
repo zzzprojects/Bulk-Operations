@@ -34,8 +34,8 @@ Support Multiple Datasources:
 - Expando Object
 
 ## Download
-<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/bulk-operations-v.svg" alt="download" /></a>
-<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/bulk-operations-d.svg" alt="" /></a>
+<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-v.svg" alt="download" /></a>
+<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-d.svg" alt="" /></a>
 
 ```
 PM> Install-Package Z.BulkOperations
