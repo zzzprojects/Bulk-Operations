@@ -24,6 +24,7 @@ Support Multiple SQL Providers:
 - SQL Compact
 - MySQL
 - SQLite
+- Oracle (Beta)
 
 Support Multiple Datasources:
 - Entity
