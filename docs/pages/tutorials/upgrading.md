@@ -12,15 +12,15 @@ All our release are normally backward compatible to make it very easy for you to
 
 ## Step 1 - Before Upgrading
 Before upgrading:
-- Make sure to read [release notes](https://github.com/zzzprojects/EntityFramework-Extensions/releases)
+- Make sure to read [release notes](https://github.com/zzzprojects/Bulk-Operations/releases)
 - **NEVER** upgrade to production without testing in a development environment first
 
 ## Step 2 - NuGet Download
 
 Entity Framework Extensions is only available through NuGet
 
-<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
-<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>
+<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-v.svg" alt="download" /></a>
+<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-d.svg" alt="" /></a>
 
-> PM> Install-Package Z.EntityFramework.Extensions
+> PM> Install-Package Z.BulkOperations
 
