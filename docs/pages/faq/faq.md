@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions | FAQ
+title: FAQ
 permalink: faq
 ---
 
