@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Batch
+title: Batch
 permalink: batch
 ---
 
