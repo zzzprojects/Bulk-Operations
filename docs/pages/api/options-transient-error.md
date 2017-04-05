@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Transient Error
+title: Transient Error
 permalink: transient-error
 ---
 
