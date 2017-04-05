@@ -8,10 +8,9 @@ permalink: requirements
 
 ## Requirements
 
-### Entity Framework Version
+### .NET Framework Version
 
-- Entity Framework 6.x
-- Entity Framework 5
+- .NET Framework 4.0 or greater
 
 ### Database Provider
 
@@ -25,5 +24,4 @@ permalink: requirements
 
 ### Note
 
-- Entity Framework Core is under development _(We hope to release a first version in 2017 Q2)_
-- EF4 is under development
+- .NET Core is under development
