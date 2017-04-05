@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bulk Operations - Licensing
+title: Licensing
 permalink: licensing
 ---
 
