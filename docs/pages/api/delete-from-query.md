@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Delete from Query
+title: Delete from Query
 permalink: delete-from-query
 ---
 
