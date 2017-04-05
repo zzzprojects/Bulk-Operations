@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Update from Query
+title: Update from Query
 permalink: update-from-query
 ---
 
