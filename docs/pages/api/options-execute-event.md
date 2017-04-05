@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Execute Event
+title: Execute Event
 permalink: execute-event
 ---
 
