@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Bulk Insert
+title: Bulk Insert
 permalink: bulk-insert
 ---
 
