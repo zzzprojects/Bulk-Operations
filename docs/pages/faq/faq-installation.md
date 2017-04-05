@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Installation
+title: Installation
 permalink: faq-installation
 ---
 
