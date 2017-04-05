@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Bulk Delete
+title: Bulk Delete
 permalink: bulk-delete
 ---
 
