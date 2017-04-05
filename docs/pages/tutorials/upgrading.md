@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Upgrading
+title: Bulk Operations - Upgrading
 permalink: upgrading
 ---
 
