@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Contact us
+title: Contact us
 permalink: contact-us
 ---
 
