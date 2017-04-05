@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bulk Operations - Overview
+title: Overview
 permalink: overview
 ---
 
