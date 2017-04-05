@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Bulk SaveChanges
+title: Bulk SaveChanges
 permalink: bulk-savechanges
 ---
 
