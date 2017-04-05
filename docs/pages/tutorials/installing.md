@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Installing
+title: Bulk Operations - Installing
 permalink: installing
 ---
 
