@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bulk Operations - Installing
+title: Installing
 permalink: installing
 ---
 
