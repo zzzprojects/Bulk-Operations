@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - API
+title: API
 permalink: api
 ---
 
