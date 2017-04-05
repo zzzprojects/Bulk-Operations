@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Bulk Merge
+title: Bulk Merge
 permalink: bulk-merge
 ---
 
