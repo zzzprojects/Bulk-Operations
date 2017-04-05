@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Custom Column
+title: Custom Column
 permalink: custom-column
 ---
 
