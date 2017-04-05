@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Requirements
+title: Requirements
 permalink: requirements
 ---
 
