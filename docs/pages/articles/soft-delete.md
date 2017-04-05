@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Soft Delete
+title: Soft Delete
 permalink: soft-delete
 ---
 
