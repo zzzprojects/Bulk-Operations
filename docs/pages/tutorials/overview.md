@@ -1,14 +1,33 @@
 ---
 layout: default
-title: Entity Framework Extensions - Overview
+title: Bulk Operations - Overview
 permalink: overview
 ---
 
 {% include template-h1.html %}
 
-## What’s Entity Framework Extensions?
+## What’s .NET Bulk Operations?
 
-This library allows you to improve your **Entity Framework Performance** dramatically.
+Like SqlBulkCopy, it's allow to perform very fast insertion in an SQL Server.
+
+However, it also support all kind of operations:
+
+- Bulk Insert
+- Bulk Update
+- Bulk Delete
+- Bulk Merge
+- Bulk Synchronize
+- Bulk SaveChanges
+
+And support many provider:
+
+- SQL Server 2008+
+- SQL Azure
+- SQL Compact
+- Oracle
+- MySQL
+- PostgreSQL
+- SQLite
 
 It’s easy to use, and easy to customize.
 
@@ -16,10 +35,19 @@ It’s easy to use, and easy to customize.
 
 {% highlight csharp %}
 // Easy to use
-ctx.BulkSaveChanges();
+var bulk = new BulkOperation(connection);
+bulk.BulkInsert(dt);
+bulk.BulkUpdate(dt);
+bulk.BulkDelete(dt);
+bulk.BulkMerge(dt);
 
 // Easy to customize
-context.BulkSaveChanges(bulk => bulk.BatchSize = 100);
+var bulk = new BulkOperation<Customer>(connection);
+bulk.BatchSize = 1000;
+bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
+bulk.ColumnOutputExpression = c => c.CustomerID;
+bulk.ColumnPrimaryKeyExpression = c => c.Code;
+bulk.BulkMerge(customers);
 {% endhighlight %}
 
 ### Is it that simple?
@@ -37,46 +65,14 @@ Already **thousands** of companies of all sizes and kinds use it:
 
 Are you still not using it? Give it one try and you will understand why they choose our library.
 
-## Bulk SaveChanges
+Under the hood, the following library also use it:
 
-The BulkSaveChanges methods replace the SaveChanges methods. They work similar, but BulkSaveChanges is way faster!
-
-BulkSaveChanges supports everything:
-
-- Association (One to One, One to Many, Many to Many, etc.)
-- Complex Type
-- Enum
-- Inheritance (TPC, TPH, TPT)
-- Navigation Property
-- Self-Hierarchy
-- Etc.
-
-### Example
-{% include template-example.html %} 
-{% highlight csharp %}
-var ctx = new EntitiesContext();
-
-ctx.Customers.AddRange(listToAdd); // add
-ctx.Customers.RemoveRange(listToRemove); // remove
-listToModify.ForEach(x => x.DateModified = DateTime.Now); // modify
-
-// Easy to use
-ctx.BulkSaveChanges();
-
-// Easy to customize
-context.BulkSaveChanges(bulk => bulk.BatchSize = 100);
-{% endhighlight %}
-
-### Performance Comparisons
-
-| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
-| :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,000 ms       | 2,000 ms       | 5,000 ms       |
-| BulkSaveChanges | 90 ms          | 150 ms         | 350 ms         |
+- [Entity Framework Extensions](http://entityframework-extensions.net/)
+- [Dapper Plus](http://dapper-plus.net/)
 
 ## Bulk Methods
 
-Bulk methods give you additional flexibility by allowing to customize options such as primary key, columns and more.
+Bulk methods give you flexibility by allowing to customize options such as primary key, columns and more.
 
 All methods your application could require is supported:
 
@@ -107,7 +103,6 @@ context.BulkMerge(customers,
 
 | Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
 | :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,000 ms       | 2,000 ms       | 5,000 ms       |
 | BulkInsert      | 6 ms           | 10 ms          | 15 ms          |
 | BulkUpdate      | 50 ms          | 55 ms          | 65 ms          |
 | BulkDelete      | 45 ms          | 50 ms          | 60 ms          |
