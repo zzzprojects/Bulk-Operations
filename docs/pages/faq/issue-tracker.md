@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Issue Tracker
+title: Issue Tracker
 permalink: issue-tracker
 ---
 
