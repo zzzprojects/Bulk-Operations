@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - From Query Operations
+title: From Query Operations
 permalink: tutorial-from-query-operations
 ---
 
