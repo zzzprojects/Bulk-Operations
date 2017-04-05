@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Audit
+title: Audit
 permalink: audit
 ---
 
