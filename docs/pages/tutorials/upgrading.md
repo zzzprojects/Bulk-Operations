@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bulk Operations - Upgrading
+title: Upgrading
 permalink: upgrading
 ---
 
