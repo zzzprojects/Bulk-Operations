@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Licensing
+title: Bulk Operations - Licensing
 permalink: licensing
 ---
 
