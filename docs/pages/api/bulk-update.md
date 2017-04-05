@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Bulk Update
+title: Bulk Update
 permalink: bulk-update
 ---
 
