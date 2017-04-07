@@ -20,7 +20,6 @@ Bulk Generic Methods allow you to work with strongly type expression.
 ### Example
 
 {% highlight csharp %}
-
 var list = new List<Customer>();
 // ...seed...
 
