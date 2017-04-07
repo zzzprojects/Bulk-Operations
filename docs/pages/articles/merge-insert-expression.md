@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Merge Insert Expression
-permalink: merge-insert-expression
+title: Ignore on Merge Insert Expression
+permalink: ignore-on-merge-insert-expression
 ---
 
 {% include template-h1.html %}
