@@ -28,20 +28,24 @@ Bulk Generic Methods allow you to work with strongly type expression.
 ### Example
 
 {% highlight csharp %}
-var dt = new DataTable();
 
-// ...code...
+var list = new List<Customer>();
+// ...seed...
 
-// Easy to use
-ctx.BulkInsert(dt);
-ctx.BulkUpdate(dt);
-ctx.BulkDelete(dt);
-ctx.BulkMerge(dt);
-ctx.BulkSynchronize(dt);
+var bulk = new BulkOperation<Customer>(connection);
 
 // Easy to customize
-context.BulkMerge(customers, 
-   bulk => bulk.ColumnPrimaryKeyExpression = customer => customer.Code; });
+bulk.BatchSize = 1000;
+bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
+bulk.ColumnOutputExpression = c => c.CustomerID;
+bulk.ColumnPrimaryKeyExpression = c => c.Code;
+
+// Easy to use
+bulk.BulkInsert(customers);
+bulk.BulkUpdate(customers);
+bulk.BulkDelete(customers);
+bulk.BulkMerge(customers);
+
 {% endhighlight %}
 
 ### Performance Benchmark
