@@ -13,28 +13,22 @@ permalink: execute-event
 Allow you to change configuration before the bulk operation is executed.
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.BulkOperationExecuting = bulkOperation => { /* configuration */ };
-    });
-}
+var bulk = new BulkOperation(connection);
+
+bulk.BulkOperationExecuting = bulkOperation => { /* configuration */ };
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## BulkOperationExecuted
 Allow you to change configuration after the bulk operation is executed.
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.BulkOperationExecuted = bulkOperation =>  { /* configuration */ };
-    });
-}
+var bulk = new BulkOperation(connection);
+
+bulk.BulkOperationExecuted = bulkOperation => { /* configuration */ };
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
