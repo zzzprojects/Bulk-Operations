@@ -7,33 +7,38 @@ permalink: bulk-insert
 {% include template-h1.html %}
 
 ## Bulk Insert
-Allow you to perform an INSERT operation.
+Execute an INSERT operation.
 
-{% include template-example.html %} 
+### Example - Bulk Insert
 {% highlight csharp %}
-var ctx = new EntitiesContext();
+var dt = new DataTable();
+// ...seed...
 
-// Easy to use
-ctx.BulkInsert(list);
+var bulk = new BulkOperation(connection);
 
 // Easy to customize
-context.BulkInsert(list, bulk => bulk.BatchSize = 100);
+bulk.BatchSize = 1000;
+
+// Easy to use
+bulk.BulkInsert(dt);
 {% endhighlight %}
 
-### Performance Comparisons
+### Example - Bulk Insert Generic
+{% highlight csharp %}
+var list = new List<Customer>();
+// ...seed...
 
-| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
-| :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,000 ms       | 2,000 ms       | 5,000 ms       |
-| BulkInsert      | 6 ms           | 10 ms          | 15 ms          |
+var bulk = new BulkOperation<Customer>(connection);
 
-SaveChanges makes one database round-trip for each entity to insert/update/delete. So if you want to save (add, modify or remove) 10,000 entities, 10,000 databases round trip will be required which are **INSANELY** slow.
+// Easy to customize
+bulk.BatchSize = 1000;
 
-Bulk Operations save entities in bulk to reduce the number of database round-trip required.
+// Easy to use
+bulk.BulkInsert(customers);
+{% endhighlight %}
 
-### Related Articles
+### Performance Benchmarks
 
-- [How to Benchmark?](benchmark)
-- [How to use Custom Column?](custom-column)
-
-
+| Operations      | 1,000 Rows     | 10,000 Rows    | 100,000 Rows   | 1,000,000 Rows |
+| :-------------- | -------------: | -------------: | -------------: | -------------: |
+| BulkInsert      | 6 ms           | 25 ms          | 200 ms         | 2,000 ms       |
