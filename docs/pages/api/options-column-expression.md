@@ -6,8 +6,13 @@ permalink: column-expression
 
 {% include template-h1.html %}
 
-## Audit Options
-- [UseAudit](#useaudit)
+## Column Expression Options
+- [ColumnInputExpression](#columninputexpression)
+- [ColumnKeyExpression](#columnkeyexpression)
+- [ColumnOutputExpression](#columnoutputexpression)
+- [ColumnSynchronizeDeleteKeySubsetExpression](#columnsynchronizedeletekeysubsetexpression)
+- [IgnoreOnMergeInsertExpression](#ignoreonmergeinsertexpression)
+- [IgnoreOnMergeUpdateExpression](#ignoreonmergeupdatexpression)
 
 ## UseAudit
 Allow you to output inserted/deleted data from the database.
