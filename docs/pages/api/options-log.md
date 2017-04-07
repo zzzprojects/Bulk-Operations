@@ -14,50 +14,39 @@ permalink: log
 Allow you to log some event happening in your database.
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
 StringBuilder logger = new StringBuilder();
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.Log += s => logger.AppendLine(s);
-    });
-}
+var bulk = new BulkOperation(connection);
+
+bulk.Log += s => logger.AppendLine(s);
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## UseLogDump
 Allow you to log in a string (LogDump) event happening in your database.
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-StringBuilder logDump;
+var bulk = new BulkOperation(connection);
 
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.UseLogDump = true;
-        operation.BulkOperationExecuting = bulkOperation => logDump = bulkOperation.LogDump;
-    });
-}
+bulk.UseLogDump = true;
+
+bulk.BulkMerge(dt);
+
+var logDump = bulk.LogDump;
 {% endhighlight %}
 
 ## LogDump
 Allow you to retrieve event happening in your database when UseLogDump is enabled.
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-StringBuilder logDump;
+var bulk = new BulkOperation(connection);
 
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.UseLogDump = true;
-        operation.BulkOperationExecuting = bulkOperation => logDump = bulkOperation.LogDump;
-    });
-}
+bulk.UseLogDump = true;
+
+bulk.BulkMerge(dt);
+
+var logDump = bulk.LogDump;
 {% endhighlight %}
