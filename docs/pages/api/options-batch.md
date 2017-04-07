@@ -20,7 +20,7 @@ By example, if you insert 1000 entities, and you set a batch size of 100, then t
 {% highlight csharp %}
 var bulk = new BulkOperation(connection);
 
-bulk.BatchSize = true;
+bulk.BatchSize = 100;
 
 bulk.BulkMerge(dt);
 {% endhighlight %}
