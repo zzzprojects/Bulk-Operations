@@ -22,19 +22,19 @@ The .NET Bulk Operations library allow you to perform all operations in your dat
 
 {% highlight csharp %}
 var dt = new DataTable();
+// ...seed...
 
-// ...code...
-
-// Easy to use
-ctx.BulkInsert(dt);
-ctx.BulkUpdate(dt);
-ctx.BulkDelete(dt);
-ctx.BulkMerge(dt);
-ctx.BulkSaveChanges(dt);
-ctx.BulkSynchronize(dt);
+var bulk = new BulkOperation(connection);
 
 // Easy to customize
-context..BulkInsert(dt);
+bulk.BatchSize = 1000;
+
+// Easy to use
+bulk.BulkInsert(dt);
+bulk.BulkUpdate(dt);
+bulk.BulkDelete(dt);
+bulk.BulkMerge(dt);
+
 {% endhighlight %}
 
 ### Performance Benchmark
