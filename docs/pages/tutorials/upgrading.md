@@ -17,10 +17,9 @@ Before upgrading:
 
 ## Step 2 - NuGet Download
 
-Entity Framework Extensions is only available through NuGet
+.NET Bulk Operations library is only available through NuGet
 
 <a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-v.svg" alt="download" /></a>
 <a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-d.svg" alt="" /></a>
 
 > PM> Install-Package Z.BulkOperations
-
