@@ -42,10 +42,10 @@ bulk.BulkMerge(customers);
 
 ### Performance Benchmark
 
-| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
-| :-------------- | -------------: | -------------: | -------------: |
-| BulkInsert      | 6 ms           | 10 ms          | 15 ms          |
-| BulkUpdate      | 50 ms          | 55 ms          | 65 ms          |
-| BulkDelete      | 45 ms          | 50 ms          | 60 ms          |
-| BulkMerge       | 65 ms          | 80 ms          | 110 ms         |
+| Operations      | 1,000 Rows     | 10,000 Rows    | 100,000 Rows   | 1,000,000 Rows |
+| :-------------- | -------------: | -------------: | -------------: | -------------: |
+| BulkInsert      | 6 ms           | 25 ms          | 200 ms         | 2,000 ms       |
+| BulkUpdate      | 50 ms          | 80 ms          | 575 ms         | 6,500 ms       |
+| BulkDelete      | 45 ms          | 70 ms          | 625 ms         | 6,800 ms       |
+| BulkMerge       | 65 ms          | 160 ms         | 1200 ms        | 12,000 ms      |
 
