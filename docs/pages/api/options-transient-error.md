@@ -14,15 +14,12 @@ Allow you to set how many time the bulk operation should retry the operation whe
 
 ### Example
 
-{% include template-example.html %} 
 {% highlight csharp %}
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.RetryCount = 3;
-    });
-}
+var bulk = new BulkOperation(connection);
+
+bulk.RetryCount = 3;
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## RetryInterval
@@ -30,14 +27,11 @@ Allow you to set how many time to wait before trying an operation again when a t
 
 ### Example
 
-{% include template-example.html %} 
 {% highlight csharp %}
-using (var ctx = new EntitiesContext())
-{
-    ctx.BulkSaveChanges(operation =>
-    {
-        operation.RetryCount = 3;
-        operation.RetryInterval = new TimeSpan(100);
-    });
-}
+var bulk = new BulkOperation(connection);
+
+bulk.RetryCount = 3;
+bulk.RetryInterval = new TimeSpan(100);
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
