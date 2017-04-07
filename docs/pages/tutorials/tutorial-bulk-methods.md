@@ -7,24 +7,29 @@ permalink: tutorial-bulk-methods
 {% include template-h1.html %}
 
 ## Introduction
-Bulk Operations allow you to perform operations directly (insert, update, delete, or merge) on a list without using the ChangeTracker.
+The .NET Bulk Operations library allow you to perform all operations in your database.
 
 The following methods is available:
 - BulkInsert
 - BulkUpdate
 - BulkDelete
 - BulkMerge
+- BulkSaveChanges
+- BulkSynchronize
 
 ### Example
 {% include template-example.html %} 
-{% highlight csharp %}
-var ctx = new EntitiesContext();
+var dt = new DataTable();
+
+// ...code...
 
 // Easy to use
-ctx.BulkInsert(list);
-ctx.BulkUpdate(list);
-ctx.BulkDelete(list);
-ctx.BulkMerge(list);
+ctx.BulkInsert(dt);
+ctx.BulkUpdate(dt);
+ctx.BulkDelete(dt);
+ctx.BulkMerge(dt);
+ctx.BulkSaveChanges(dt);
+ctx.BulkSynchronize(dt);
 
 // Easy to customize
 context.BulkMerge(customers, 
