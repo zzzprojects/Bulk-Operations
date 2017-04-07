@@ -9,13 +9,14 @@ permalink: tutorial-bulk-methods
 ## Introduction
 The .NET Bulk Operations library allow you to perform all operations in your database.
 
-The following methods is available:
-- BulkInsert
-- BulkUpdate
-- BulkDelete
-- BulkMerge
-- BulkSaveChanges
-- BulkSynchronize
+| Name      | Description |
+| :-------------- | :------------- |
+| BulkInsert      | Execute an INSERT operation. |
+| BulkUpdate      | Execute an UPDATE operation. |
+| BulkDelete      | Execute a DELETE operation. |
+| BulkMerge       | Execute a MERGE/UPSERT operation. UPDATE existing rows matching the key, and INSERT new rows. |
+| BulkSaveChanges | Execute an INSERT/UPDATE/DELETE operation using the DataRowState of the DataTable. |
+| BulkSynchronize | Execute a SYNCHRONIZE operation. UPDATE existing rows matching the key, INSERT new rows and DELETE records from the destination not existing in the source. |
 
 ### Example
 
