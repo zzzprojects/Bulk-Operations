@@ -7,33 +7,38 @@ permalink: bulk-merge
 {% include template-h1.html %}
 
 ## Bulk Merge
-Allow you to perform a MERGE (Insert/Update) operation.
+Execute a MERGE/UPSERT operation. UPDATE existing rows matching the key, and INSERT new rows.
 
-{% include template-example.html %} 
+### Example - Bulk Merge
 {% highlight csharp %}
-var ctx = new EntitiesContext();
+var dt = new DataTable();
+// ...seed...
 
-// Easy to use
-ctx.BulkMerge(list);
+var bulk = new BulkOperation(connection);
 
 // Easy to customize
-context.BulkDelete(customers, 
-   bulk => bulk.ColumnPrimaryKeyExpression = customer => customer.Code; });
+bulk.BatchSize = 1000;
+
+// Easy to use
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
-### Performance Comparisons
+### Example - Bulk Merge Generic
+{% highlight csharp %}
+var list = new List<Customer>();
+// ...seed...
 
-| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
-| :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,000 ms       | 2,000 ms       | 5,000 ms       |
-| BulkMerge       | 65 ms          | 80 ms          | 110 ms         |
+var bulk = new BulkOperation<Customer>(connection);
 
-SaveChanges makes one database round-trip for each entity to insert/update/delete. So if you want to save (add, modify or remove) 10,000 entities, 10,000 databases round trip will be required which are **INSANELY** slow.
+// Easy to customize
+bulk.BatchSize = 1000;
 
-Bulk Operations save entities in bulk to reduce the number of database round-trip required.
+// Easy to use
+bulk.BulkMerge(customers);
+{% endhighlight %}
 
-### Related Articles
+### Performance Benchmarks
 
-- [How to Benchmark?](benchmark)
-- [How to use Custom Column?](custom-column)
-- [How to use Custom Key?](custom-key)
+| Operations      | 1,000 Rows     | 10,000 Rows    | 100,000 Rows   | 1,000,000 Rows |
+| :-------------- | -------------: | -------------: | -------------: | -------------: |
+| BulkMerge       | 65 ms          | 160 ms         | 1200 ms        | 12,000 ms      |
