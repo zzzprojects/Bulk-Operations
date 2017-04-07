@@ -18,7 +18,8 @@ The following methods is available:
 - BulkSynchronize
 
 ### Example
-{% include template-example.html %} 
+
+{% highlight csharp %}
 var dt = new DataTable();
 
 // ...code...
