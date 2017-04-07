@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Articles
+title: Articles
 permalink: articles
 ---
 

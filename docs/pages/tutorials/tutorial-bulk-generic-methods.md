@@ -1,7 +1,7 @@
 ---
 layout: default
-title: BulkSaveChanges
-permalink: tutorial-bulk-savechanges
+title: Bulk Generic Methods
+permalink: tutorial-bulk-generic-methods
 ---
 
 {% include template-h1.html %}

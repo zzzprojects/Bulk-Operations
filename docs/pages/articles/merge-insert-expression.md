@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Benchmark
-permalink: benchmark
+title: Merge Insert Expression
+permalink: merge-insert-expression
 ---
 
 {% include template-h1.html %}

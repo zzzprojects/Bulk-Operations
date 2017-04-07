@@ -1,7 +1,7 @@
 ---
 layout: default
-title: From Query Operations
-permalink: tutorial-from-query-operations
+title: From Query Methods
+permalink: tutorial-from-query-methods
 ---
 
 {% include template-h1.html %}
