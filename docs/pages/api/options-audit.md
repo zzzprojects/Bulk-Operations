@@ -16,11 +16,11 @@ Allow you to audit inserted/deleted rows from the database.
 
 ### Example
 {% highlight csharp %}
-```csharp
+var bulk = new BulkOperation(connection);
+
 // Perform audit
 bulk.UseAudit = true;
 bulk.BulkMerge(dt);
 
 var auditEntries = bulk.AuditEntries;
-```
 {% endhighlight %}
