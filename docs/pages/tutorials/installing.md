@@ -16,11 +16,6 @@ Don't worry. People love our library because it's so easy to use.
 
 .NET Bulk Operations library is only available through NuGet
 
-### EF Core
-_Coming in 2017 Q2_
-
-### EF6
-
 <a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-v.svg" alt="download" /></a>
 <a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/bulk-operations-d.svg" alt="" /></a>
 
