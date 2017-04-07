@@ -34,8 +34,7 @@ ctx.BulkSaveChanges(dt);
 ctx.BulkSynchronize(dt);
 
 // Easy to customize
-context.BulkMerge(customers, 
-   bulk => bulk.ColumnPrimaryKeyExpression = customer => customer.Code; });
+context..BulkInsert(dt);
 {% endhighlight %}
 
 ### Performance Benchmark
