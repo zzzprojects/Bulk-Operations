@@ -6,14 +6,6 @@ permalink: tutorial-bulk-generic-methods
 
 {% include template-h1.html %}
 
----
-layout: default
-title: Bulk Methods
-permalink: tutorial-bulk-methods
----
-
-{% include template-h1.html %}
-
 ## Introduction
 Bulk Generic Methods allow you to work with strongly type expression.
 
