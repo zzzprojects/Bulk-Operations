@@ -7,33 +7,38 @@ permalink: bulk-update
 {% include template-h1.html %}
 
 ## Bulk Update
-Allow you to perform a UPDATE operation.
+Execute an UPDATE operation.
 
-{% include template-example.html %} 
+### Example - Bulk Update
 {% highlight csharp %}
-var ctx = new EntitiesContext();
+var dt = new DataTable();
+// ...seed...
 
-// Easy to use
-ctx.BulkUpdate(list);
+var bulk = new BulkOperation(connection);
 
 // Easy to customize
-context.BulkUpdate(customers, 
-   bulk => bulk.ColumnPrimaryKeyExpression = customer => customer.Code; });
+bulk.BatchSize = 1000;
+
+// Easy to use
+bulk.BulkUpdate(dt);
 {% endhighlight %}
 
-### Performance Comparisons
+### Example - Bulk Update Generic
+{% highlight csharp %}
+var list = new List<Customer>();
+// ...seed...
 
-| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
-| :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,000 ms       | 2,000 ms       | 5,000 ms       |
-| BulkUpdate      | 50 ms          | 55 ms          | 65 ms          |
+var bulk = new BulkOperation<Customer>(connection);
 
-SaveChanges makes one database round-trip for each entity to insert/update/delete. So if you want to save (add, modify or remove) 10,000 entities, 10,000 databases round trip will be required which are **INSANELY** slow.
+// Easy to customize
+bulk.BatchSize = 1000;
 
-Bulk Operations save entities in bulk to reduce the number of database round-trip required.
+// Easy to use
+bulk.BulkUpdate(customers);
+{% endhighlight %}
 
-### Related Articles
+### Performance Benchmarks
 
-- [How to Benchmark?](benchmark)
-- [How to use Custom Column?](custom-column)
-- [How to use Custom Key?](custom-key)
+| Operations      | 1,000 Rows     | 10,000 Rows    | 100,000 Rows   | 1,000,000 Rows |
+| :-------------- | -------------: | -------------: | -------------: | -------------: |
+| BulkUpdate      | 50 ms          | 80 ms          | 575 ms         | 6,500 ms       |
