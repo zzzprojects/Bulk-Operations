@@ -14,7 +14,7 @@ Don't worry. People love our library because it's so easy to use.
 
 ## Step 1 - NuGet Download
 
-Entity Framework Extensions is only available through NuGet
+.NET Bulk Operations library is only available through NuGet
 
 ### EF Core
 _Coming in 2017 Q2_
