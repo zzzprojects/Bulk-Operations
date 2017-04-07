@@ -33,9 +33,9 @@ Update Duplicate Key,update-duplicate-key,articles
 Update Key Value,update-key-value,articles
 Input Expression,input-expression,articles
 Key Expression,key-expression,articles
-Merge Insert Expression,merge-insert-expression,articles
-Merge Update Expression,merge-update-expression,articles
 Output Expression,output-expression,articles
+Ignore on Merge Insert Expression,ignore-on-merge-insert-expression,articles
+Ignore on Merge Update Expression,ignore-on-merge-update-expression,articles
 Synchronize Expression,synchronize-expression,articles
 FAQ,faq,faq
 Contact Us,contact-us,faq
