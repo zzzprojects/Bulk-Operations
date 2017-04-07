@@ -21,12 +21,12 @@ Allow you to set the maximum number of batches a temporary table can contain.
 
 - Default Value: 0 (unlimited)
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-context.BulkSaveChanges(operation =>
-{
-   bulk.TemporaryTableBatchByTable = 5;
-});
+var bulk = new BulkOperation(connection);
+
+bulk.TemporaryTableBatchByTable = 5;
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## TemporaryTableInsertBatchSize
@@ -34,12 +34,12 @@ Allow you to set the number of record by batch to insert in a temporary table.
 
 - Default Value: 10,000
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-context.BulkSaveChanges(operation =>
-{
-   bulk.TemporaryTableInsertBatchSize = 1000;
-});
+var bulk = new BulkOperation(connection);
+
+bulk.TemporaryTableInsertBatchSize = 1000;
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## TemporaryTableMinRecord
@@ -47,12 +47,12 @@ Allow you to set the minimum number of records before a temporary table strategy
 
 - Default Value: 10
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-context.BulkSaveChanges(operation =>
-{
-   bulk.TemporaryTableMinRecord = 15;
-});
+var bulk = new BulkOperation(connection);
+
+bulk.TemporaryTableMinRecord = 15;
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
 
 ## TemporaryTableUseTableLock
@@ -61,10 +61,10 @@ Allow you to lock the temporary table while being populated.
 - Default Value: true
 
 ### Example
-{% include template-example.html %} 
 {% highlight csharp %}
-context.BulkSaveChanges(operation =>
-{
-   bulk.TemporaryTableUseTableLock = true;
-});
+var bulk = new BulkOperation(connection);
+
+bulk.TemporaryTableUseTableLock = true;
+
+bulk.BulkMerge(dt);
 {% endhighlight %}
