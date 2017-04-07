@@ -10,7 +10,7 @@ permalink: bulk-savechanges
 
 Execute an INSERT/UPDATE/DELETE operation using the DataRowState of the DataTable.
 
-### Example - Bulk Insert
+### Example - Bulk SaveChanges
 {% highlight csharp %}
 var dt = new DataTable();
 // ...seed...
