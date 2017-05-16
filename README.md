@@ -115,7 +115,7 @@ Contact our outstanding customer support for any request. We usually answer with
 - [Documentation](https://github.com/zzzprojects/Bulk-Operations/wiki)
 - [Issues / Questions](https://github.com/zzzprojects/Bulk-Operations/issues)
 
-## FREE vs PRO
+## PRO
 _PRO Version unlocked for the current month_
 
 Features                    | [PRO Version](http://bulk-operations.net/#pro)
