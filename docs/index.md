@@ -113,7 +113,7 @@ layout: post
 								<a class="nav-link" href="http://bulkoperations.net/tutorials">Tutorials</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="https://github.com/zzzprojects/Bulk-Operations/issues" target="_blank">Forum</a>
+								<a class="nav-link" href="https://github.com/zzzprojects/Bulk-Operations/issues" target="_blank">Issues</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#pro">PRO Version</a>
