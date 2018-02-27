@@ -4,6 +4,9 @@ title: Trial
 permalink: trial
 ---
 
+{% include template-h1.html %}
+
+
 Oops! Your trial has expired.
 
 ### How can I extend my trial?
