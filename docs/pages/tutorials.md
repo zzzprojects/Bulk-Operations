@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Entity Framework Extensions - Tutorials
+title: Tutorials
 permalink: tutorials
 ---
 
