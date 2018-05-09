@@ -4,13 +4,13 @@ title: Bulk Update
 permalink: bulk-update
 ---
 
-{% include template-h1.html %}
+
 
 ## Bulk Update
 Execute an UPDATE operation.
 
 ### Example - Bulk Update
-{% highlight csharp %}
+```csharp
 var dt = new DataTable();
 // ...seed...
 
@@ -21,10 +21,10 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkUpdate(dt);
-{% endhighlight %}
+```
 
 ### Example - Bulk Update Generic
-{% highlight csharp %}
+```csharp
 var list = new List<Customer>();
 // ...seed...
 
@@ -35,7 +35,7 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkUpdate(customers);
-{% endhighlight %}
+```
 
 ### Performance Benchmarks
 

@@ -4,13 +4,13 @@ title: Bulk Merge
 permalink: bulk-merge
 ---
 
-{% include template-h1.html %}
+
 
 ## Bulk Merge
 Execute a MERGE/UPSERT operation. UPDATE existing rows matching the key, and INSERT new rows.
 
 ### Example - Bulk Merge
-{% highlight csharp %}
+```csharp
 var dt = new DataTable();
 // ...seed...
 
@@ -21,10 +21,10 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkMerge(dt);
-{% endhighlight %}
+```
 
 ### Example - Bulk Merge Generic
-{% highlight csharp %}
+```csharp
 var list = new List<Customer>();
 // ...seed...
 
@@ -35,7 +35,7 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkMerge(customers);
-{% endhighlight %}
+```
 
 ### Performance Benchmarks
 

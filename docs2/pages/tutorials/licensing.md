@@ -4,7 +4,7 @@ title: Licensing
 permalink: licensing
 ---
 
-{% include template-h1.html %}
+
 
 ## Evaluation Period
 You can evaluate our library for several months before purchasing it.
@@ -18,26 +18,26 @@ Upon purchase, you will receive a license name and a license key.
 ## Setup License from config file
 The license name and key can be directly be added in the app.config or web.config file in the appSettings section.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 <appSettings>
 	<add key="Z_BulkOperations_LicenseName" value="[licenseName]"/>
 	<add key="Z_BulkOperations_LicenseKey" value="[licenseKey]"/>
 </appSettings>
-{% endhighlight %}
+```
 
 ## Setup License from code
 You can also set the license name and key directly in the code.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 // using Z.BulkOperations; // Don't forget to include this.
 
 string licenseName = //... PRO license name
 string licenseKey = //... PRO license key
 
 Z.BulkOperations.LicenseManager.AddLicense(licenseName, licenseKey);
-{% endhighlight %}
+```
 
 ### Recommendation
 - Use the config file to store your license name and license key.
@@ -49,8 +49,8 @@ Z.BulkOperations.LicenseManager.AddLicense(licenseName, licenseKey);
 
 ## How can I check if my license is valid?
 The validate method allow you to know whether your license is valid or not.
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 // CHECK for default provider (SQL Server)
 string licenseErrorMessage;
 if (!Z.BulkOperations.LicenseManager.LicenseManager.ValidateLicense(out licenseErrorMessage))
@@ -64,4 +64,4 @@ if (!Z.BulkOperations.LicenseManager.LicenseManager.ValidateLicense(out licenseE
 {
    throw new Exception(licenseErrorMessage);
 }
-{% endhighlight %}
+```

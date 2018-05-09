@@ -4,7 +4,7 @@ title: Column Expression
 permalink: column-expression
 ---
 
-{% include template-h1.html %}
+
 
 ## Column Expression Options
 - [ColumnInputExpression](#columninputexpression)

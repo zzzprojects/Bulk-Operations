@@ -4,7 +4,7 @@ title: Bulk Methods
 permalink: tutorial-bulk-methods
 ---
 
-{% include template-h1.html %}
+
 
 ## Introduction
 The .NET Bulk Operations library allow you to perform all operations in your database.
@@ -20,7 +20,7 @@ The .NET Bulk Operations library allow you to perform all operations in your dat
 
 ### Example
 
-{% highlight csharp %}
+```csharp
 var dt = new DataTable();
 // ...seed...
 
@@ -35,7 +35,7 @@ bulk.BulkUpdate(dt);
 bulk.BulkDelete(dt);
 bulk.BulkMerge(dt);
 
-{% endhighlight %}
+```
 
 ### Performance Benchmark
 

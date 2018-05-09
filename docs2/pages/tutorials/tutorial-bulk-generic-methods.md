@@ -4,7 +4,7 @@ title: Bulk Generic Methods
 permalink: tutorial-bulk-generic-methods
 ---
 
-{% include template-h1.html %}
+
 
 ## Introduction
 Bulk Generic Methods allow you to work with strongly type expression.
@@ -19,7 +19,7 @@ Bulk Generic Methods allow you to work with strongly type expression.
 
 ### Example
 
-{% highlight csharp %}
+```csharp
 var list = new List<Customer>();
 // ...seed...
 
@@ -37,7 +37,7 @@ bulk.BulkUpdate(customers);
 bulk.BulkDelete(customers);
 bulk.BulkMerge(customers);
 
-{% endhighlight %}
+```
 
 ### Performance Benchmark
 

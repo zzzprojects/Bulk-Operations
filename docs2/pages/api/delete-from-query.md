@@ -4,19 +4,19 @@ title: Delete from Query
 permalink: delete-from-query
 ---
 
-{% include template-h1.html %}
+
 
 ## Delete From Query
 Execute a DELETE operation using a LINQ Query.
 
 ### Example
-{% highlight csharp %}
+```csharp
 var bulk = new BulkOperation<Customer>(connection);
 
 // DELETE all customers inactive for more than 2 years
 bulk.DeleteFromQuery(
     c => c.Where(x => x.LastLogin < DateTime.Now.AddYears(-2)));
-{% endhighlight %}
+```
 
 ### Performance Benchmarks
 

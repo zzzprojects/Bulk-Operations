@@ -4,7 +4,7 @@ title: From Query Methods
 permalink: tutorial-from-query-methods
 ---
 
-{% include template-h1.html %}
+
 
 ## Introduction
 FromQuery operations allow you to use LINQ Query to execute an operation directly in the database
@@ -17,7 +17,7 @@ FromQuery operations allow you to use LINQ Query to execute an operation directl
 
 
 ### Example
-{% highlight csharp %}
+```csharp
 var bulk = new BulkOperation<Customer>(connection);
 
 // DELETE all customers inactive for more than 2 years
@@ -28,7 +28,7 @@ bulk.DeleteFromQuery(
 bulk.UpdateFromQuery(
     c => c.Where(x => x.Actif && x.LastLogin < DateTime.Now.AddYears(-2)),
     c => new Customer {Actif = false});
-{% endhighlight %}
+```
 
 
 ### Performance Benchmarks

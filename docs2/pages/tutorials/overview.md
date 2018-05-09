@@ -4,7 +4,7 @@ title: Overview
 permalink: overview
 ---
 
-{% include template-h1.html %}
+
 
 ## What's Bulk Operations library?
 
@@ -31,9 +31,9 @@ And many providers:
 
 It’s easy to use, and easy to customize.
 
-{% include template-example.html %} 
 
-{% highlight csharp %}
+
+```csharp
 // Easy to use
 var bulk = new BulkOperation(connection);
 bulk.BulkInsert(dt);
@@ -48,7 +48,7 @@ bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
 bulk.ColumnOutputExpression = c => c.CustomerID;
 bulk.ColumnPrimaryKeyExpression = c => c.Code;
 bulk.BulkMerge(customers);
-{% endhighlight %}
+```
 
 ### Is it that simple?
 

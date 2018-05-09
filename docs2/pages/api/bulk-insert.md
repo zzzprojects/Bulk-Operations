@@ -4,13 +4,13 @@ title: Bulk Insert
 permalink: bulk-insert
 ---
 
-{% include template-h1.html %}
+
 
 ## Bulk Insert
 Execute an INSERT operation.
 
 ### Example - Bulk Insert
-{% highlight csharp %}
+```csharp
 var dt = new DataTable();
 // ...seed...
 
@@ -21,10 +21,10 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkInsert(dt);
-{% endhighlight %}
+```
 
 ### Example - Bulk Insert Generic
-{% highlight csharp %}
+```csharp
 var list = new List<Customer>();
 // ...seed...
 
@@ -35,7 +35,7 @@ bulk.BatchSize = 1000;
 
 // Easy to use
 bulk.BulkInsert(customers);
-{% endhighlight %}
+```
 
 ### Performance Benchmarks
 

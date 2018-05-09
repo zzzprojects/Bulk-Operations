@@ -4,7 +4,7 @@ title: Execute Event
 permalink: execute-event
 ---
 
-{% include template-h1.html %}
+
 ## Excecute Event Options
 - [BulkOperationExecuting](#bulkoperationexecuting)
 - [BulkOperationExecuted](#bulkoperationexecuted)
@@ -13,22 +13,22 @@ permalink: execute-event
 Allow you to change configuration before the bulk operation is executed.
 
 ### Example
-{% highlight csharp %}
+```csharp
 var bulk = new BulkOperation(connection);
 
 bulk.BulkOperationExecuting = bulkOperation => { /* configuration */ };
 
 bulk.BulkMerge(dt);
-{% endhighlight %}
+```
 
 ## BulkOperationExecuted
 Allow you to change configuration after the bulk operation is executed.
 
 ### Example
-{% highlight csharp %}
+```csharp
 var bulk = new BulkOperation(connection);
 
 bulk.BulkOperationExecuted = bulkOperation => { /* configuration */ };
 
 bulk.BulkMerge(dt);
-{% endhighlight %}
+```
