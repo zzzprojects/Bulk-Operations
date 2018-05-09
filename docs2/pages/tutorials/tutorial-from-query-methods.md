@@ -1,10 +1,4 @@
----
-layout: default
-title: From Query Methods
-permalink: tutorial-from-query-methods
----
-
-
+# From Query Methods
 
 ## Introduction
 FromQuery operations allow you to use LINQ Query to execute an operation directly in the database

@@ -1,9 +1,2 @@
----
-layout: default
-title: Output Expression
-permalink: output-expression
----
-
-
-
+# Output Expression
 _Coming Soon_

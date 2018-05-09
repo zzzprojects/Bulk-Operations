@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Methods
-permalink: tutorial-bulk-methods
----
-
-
+# Bulk Methods
 
 ## Introduction
 The .NET Bulk Operations library allow you to perform all operations in your database.

@@ -1,9 +1,3 @@
----
-layout: default
-title: Synchronize Expression
-permalink: synchronize-expression
----
-
-
+# Synchronize Expression
 
 _Coming Soon_

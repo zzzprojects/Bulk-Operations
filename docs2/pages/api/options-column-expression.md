@@ -1,10 +1,4 @@
----
-layout: default
-title: Column Expression
-permalink: column-expression
----
-
-
+# Column Expression
 
 ## Column Expression Options
 - [ColumnInputExpression](#columninputexpression)

@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Insert
-permalink: bulk-insert
----
-
-
+# Bulk Insert
 
 ## Bulk Insert
 Execute an INSERT operation.

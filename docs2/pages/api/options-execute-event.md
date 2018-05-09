@@ -1,9 +1,4 @@
----
-layout: default
-title: Execute Event
-permalink: execute-event
----
-
+# Execute Event
 
 ## Excecute Event Options
 - [BulkOperationExecuting](#bulkoperationexecuting)

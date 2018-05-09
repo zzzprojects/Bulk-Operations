@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Merge
-permalink: bulk-merge
----
-
-
+# Bulk Merge
 
 ## Bulk Merge
 Execute a MERGE/UPSERT operation. UPDATE existing rows matching the key, and INSERT new rows.

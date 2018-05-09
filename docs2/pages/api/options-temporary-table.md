@@ -1,9 +1,4 @@
----
-layout: default
-title: Temporary Table
-permalink: temporary-table
----
-
+# Temporary Table
 
 ## Temporary Table Options
 - [TemporaryTableBatchByTable](#temporarytablebatchbytable)

@@ -1,9 +1,3 @@
----
-layout: default
-title: Update Key Value
-permalink: update-key-value
----
-
-
+# Update Key Value
 
 _Coming Soon_

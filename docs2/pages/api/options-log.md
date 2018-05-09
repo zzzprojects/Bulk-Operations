@@ -1,9 +1,4 @@
----
-layout: default
-title: Log
-permalink: log
----
-
+# Log
 
 ## Log Options
 - [Log](#log)

@@ -1,9 +1,3 @@
----
-layout: default
-title: Insert IF NOT Exists
-permalink: insert-if-not-exists
----
-
-
+# Insert IF NOT Exists
 
 _Coming Soon_

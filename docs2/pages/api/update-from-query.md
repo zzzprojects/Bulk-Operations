@@ -1,10 +1,4 @@
----
-layout: default
-title: Update from Query
-permalink: update-from-query
----
-
-
+# Update from Query
 
 ## Update From Query
 Execute an INSERT operation.

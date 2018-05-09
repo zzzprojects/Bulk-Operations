@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Generic Methods
-permalink: tutorial-bulk-generic-methods
----
-
-
+# Bulk Generic Methods
 
 ## Introduction
 Bulk Generic Methods allow you to work with strongly type expression.

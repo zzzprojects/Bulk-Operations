@@ -1,9 +1,3 @@
----
-layout: default
-title: BulkOperation Manager
-permalink: bulkoperation-manager
----
-
-
+# BulkOperation Manager
 
 _Coming Soon_

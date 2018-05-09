@@ -1,10 +1,4 @@
----
-layout: default
-title: Batch
-permalink: batch
----
-
-
+# Batch
 
 ## Batch Options
 - [BatchSize](#batchsize)

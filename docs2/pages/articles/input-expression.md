@@ -1,9 +1,3 @@
----
-layout: default
-title: Input Expression
-permalink: input-expression
----
-
-
+# Input Expression
 
 _Coming Soon_

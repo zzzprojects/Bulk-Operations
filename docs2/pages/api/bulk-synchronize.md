@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Synchronize
-permalink: bulk-synchronize
----
-
-
+# Bulk Synchronize
 
 ## Bulk Synchronize
 Execute a SYNCHRONIZE operation. UPDATE existing rows matching the key, INSERT new rows and DELETE records from the destination not existing in the source.

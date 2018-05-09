@@ -1,9 +1,2 @@
----
-layout: default
-title: Insert Keep Identity
-permalink: insert-keep-identity
----
-
-
-
+# Insert Keep Identity
 _Coming Soon_

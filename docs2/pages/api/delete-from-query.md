@@ -1,10 +1,4 @@
----
-layout: default
-title: Delete from Query
-permalink: delete-from-query
----
-
-
+# Delete from Query
 
 ## Delete From Query
 Execute a DELETE operation using a LINQ Query.

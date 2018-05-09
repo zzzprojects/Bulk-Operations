@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Delete
-permalink: bulk-delete
----
-
-
+# Bulk Delete
 
 ## Bulk Delete
 Execute a DELETE operation.

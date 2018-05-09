@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk SaveChanges
-permalink: bulk-savechanges
----
-
-
+# Bulk SaveChanges
 
 ## Introduction
 

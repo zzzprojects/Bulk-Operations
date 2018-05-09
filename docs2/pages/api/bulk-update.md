@@ -1,10 +1,4 @@
----
-layout: default
-title: Bulk Update
-permalink: bulk-update
----
-
-
+# Bulk Update
 
 ## Bulk Update
 Execute an UPDATE operation.

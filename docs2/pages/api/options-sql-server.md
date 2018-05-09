@@ -1,9 +1,4 @@
----
-layout: default
-title: SQL Server
-permalink: sql-server
----
-
+# SQL Server
 
 ## SQL Server Options
 - [SqlBulkCopyOptions](#sqlbulkcopyoptions)

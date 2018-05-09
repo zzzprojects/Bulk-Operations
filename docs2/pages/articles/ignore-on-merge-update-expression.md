@@ -1,9 +1,3 @@
----
-layout: default
-title: Ignore on Merge Update Expression
-permalink: ignore-on-merge-update-expression
----
-
-
+# Ignore on Merge Update Expression
 
 _Coming Soon_

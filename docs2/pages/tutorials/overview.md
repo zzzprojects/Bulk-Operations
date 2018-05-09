@@ -1,10 +1,4 @@
----
-layout: default
-title: Overview
-permalink: overview
----
-
-
+# Overview
 
 ## What's Bulk Operations library?
 

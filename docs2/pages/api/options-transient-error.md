@@ -1,9 +1,4 @@
----
-layout: default
-title: Transient Error
-permalink: transient-error
----
-
+# Transient Error
 
 ## Transient Error Options
 - [RetryCount](#retrycount)

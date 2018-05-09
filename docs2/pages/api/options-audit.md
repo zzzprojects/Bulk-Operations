@@ -1,10 +1,4 @@
----
-layout: default
-title: Audit
-permalink: audit
----
-
-
+# Audit
 
 ## Audit Options
 - [UseAudit](#useaudit)

@@ -1,9 +1,3 @@
----
-layout: default
-title: Key Expression
-permalink: key-expression
----
-
-
+# Key Expression
 
 _Coming Soon_
