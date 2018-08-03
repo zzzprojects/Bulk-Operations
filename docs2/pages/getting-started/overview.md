@@ -50,6 +50,30 @@ Yes,
 
 That’s why people feel in love so quickly with our library.
 
+## Installing
+Download the <a href="/download">NuGet Package</a>
+
+## Requirements
+
+### .NET Framework Version
+
+- .NET Framework 4.0 or greater
+
+### Database Provider
+
+- SQL Server 2008+
+- SQL Azure
+- SQL Compact
+- Oracle
+- MySQL
+- PostgreSQL
+- SQLite
+
+### Note
+
+- .NET Core is under development
+
+
 ### Who use it?
 
 Already **thousands** of companies of all sizes and kinds use it:
