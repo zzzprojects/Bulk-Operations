@@ -55,9 +55,10 @@ Download the <a href="/download">NuGet Package</a>
 
 ## Requirements
 
-### .NET Framework Version
+### .NET Version
 
 - .NET Framework 4.0 or greater
+- .NET Standard 2.0 or greater 
 
 ### Database Provider
 
@@ -68,10 +69,6 @@ Download the <a href="/download">NuGet Package</a>
 - MySQL
 - PostgreSQL
 - SQLite
-
-### Note
-
-- .NET Core is under development
 
 
 ### Who use it?
