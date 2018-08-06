@@ -25,8 +25,6 @@ And many providers:
 
 It's easy to use, and easy to customize.
 
-
-
 ```csharp
 // Easy to use
 var bulk = new BulkOperation(connection);
@@ -70,8 +68,7 @@ Download the <a href="/download">NuGet Package</a>
 - PostgreSQL
 - SQLite
 
-
-### Who use it?
+## Who use it?
 
 Already **thousands** of companies of all sizes and kinds use it:
 
