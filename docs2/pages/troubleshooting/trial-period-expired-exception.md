@@ -4,7 +4,7 @@
 
 You execute a method from the Bulk Operations library, and the following error is thrown:
 
-> ERROR_005: The monthly trial period is expired. You can extend your trial by downloading the latest version. You can also purchase a perpetual license on our website. If you already own this license, this error only appears if the license has not been found, you can find additional information on our troubleshooting section (http://bulk-operations.net/troubleshooting). Contact our support team for more details: info@zzzprojects.com'
+> ERROR_005: The monthly trial period is expired. You can extend your trial by downloading the latest version. You can also purchase a perpetual license on our website. If you already own this license, this error only appears if the license has not been found, you can find additional information on our troubleshooting section (http://bulk-operations.net/trial-period-expired-exception). Contact our support team for more details: info@zzzprojects.com'
 
 ## Solution
 
