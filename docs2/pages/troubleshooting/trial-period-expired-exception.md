@@ -17,12 +17,12 @@ You execute a method from the Bulk Operations library, and the following error i
 
 #### Trial Period Expired
 
-You can extend your trial by downloading the latest version: [Upgrading](http://entityframework-extensions.net/upgrading)
+You can extend your trial by downloading the latest version.
 
 The latest version always contains a trial for the current month to allow a company to evaluate our library for several months.
 
 #### License Badly Registered
 
-Make sure to follow all recommendation about how to setup your license: [Licensing](http://entityframework-extensions.net/licensing)
+Make sure to follow all recommendation about how to setup your license: [Licensing](/licensing)
 
 Otherwise contact us: {% include infozzzprojects-email.html %}
