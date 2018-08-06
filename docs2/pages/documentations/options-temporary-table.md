@@ -1,16 +1,7 @@
 # Temporary Table
 
-## Temporary Table Options
-- [TemporaryTableBatchByTable](#temporarytablebatchbytable)
-- [TemporaryTableInsertBatchSize](#temporarytableinsertbatchsize)
-- [TemporaryTableMinRecord](#temporarytableminrecord)
-- [TemporaryTableUseTableLock](#temporarytableusetablelock)
-
-
-
 Customize how and when to use a temporary table instead of inline SQL.
 
-**Properties:**
 ## TemporaryTableBatchByTable
 Allow you to set the maximum number of batches a temporary table can contain.
 
