@@ -25,4 +25,4 @@ The latest version always contains a trial for the current month to allow a comp
 
 Make sure to follow all recommendation about how to setup your license: [Licensing](/licensing)
 
-Otherwise contact us: {% include infozzzprojects-email.html %}
+Otherwise contact us: info@zzzprojects.com
