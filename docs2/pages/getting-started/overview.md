@@ -23,7 +23,7 @@ And many providers:
 - PostgreSQL
 - SQLite
 
-It’s easy to use, and easy to customize.
+It's easy to use, and easy to customize.
 
 
 
@@ -48,7 +48,7 @@ bulk.BulkMerge(customers);
 
 Yes,
 
-That’s why people feel in love so quickly with our library.
+That's why people feel in love so quickly with our library.
 
 ## Installing
 Download the <a href="/download">NuGet Package</a>
