@@ -4,7 +4,7 @@
 
 You execute a method from the Bulk Operations library, and the following error is thrown:
 
-{% include template-exception.html message='This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms.' %}
+> This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms.
 
 ## Solution
 
