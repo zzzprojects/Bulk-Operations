@@ -40,5 +40,5 @@ bulk.BulkMerge(customers);
 | <a href="/bulk-insert" target="_blank">BulkInsert</a>      | 6 ms           | 25 ms          | 200 ms         | 2,000 ms       |
 | <a href="/bulk-update" target="_blank">BulkUpdate</a>      | 50 ms          | 80 ms          | 575 ms         | 6,500 ms       |
 | <a href="/bulk-delete" target="_blank">BulkDelete</a>      | 45 ms          | 70 ms          | 625 ms         | 6,800 ms       |
-| <a href="/bulk-merge" target="_blank">BulkMerge</a>BulkMerge       | 65 ms          | 160 ms         | 1200 ms        | 12,000 ms      |
+| <a href="/bulk-merge" target="_blank">BulkMerge</a>       | 65 ms          | 160 ms         | 1200 ms        | 12,000 ms      |
 
