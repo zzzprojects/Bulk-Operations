@@ -5,7 +5,7 @@ Bulk Generic Methods allow you to work with strongly type expression.
 
 | Name      | Description |
 | :-------------- | :------------- |
-| BulkInsert      | Execute an INSERT operation. |
+| <a href="/bulk-insert" target="_blank">BulkInsert</a>      | Execute an INSERT operation. |
 | BulkUpdate      | Execute an UPDATE operation. |
 | BulkDelete      | Execute a DELETE operation. |
 | BulkMerge       | Execute a MERGE/UPSERT operation. UPDATE existing rows matching the key, and INSERT new rows. |
