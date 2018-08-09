@@ -5,8 +5,8 @@ FromQuery operations allow you to use LINQ Query to execute an operation directl
 
 | Name      | Description |
 | :-------------- | :------------- |
-| DeleteFromQuery | Execute a DELETE operation using a LINQ Query. |
-| UpdateFromQuery | Execute an UPDATE operation using a LINQ Query. |
+| <a href="/delete-from-query">DeleteFromQuery</a> | Execute a DELETE operation using a LINQ Query. |
+| <a href="/update-from-query">UpdateFromQuery</a> | Execute an UPDATE operation using a LINQ Query. |
 
 
 
@@ -29,8 +29,8 @@ bulk.UpdateFromQuery(
 
 | Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
 | :-------------- | -------------: | -------------: | -------------: |
-| DeleteFromQuery | 1 ms           | 1 ms           | 1 ms           |
-| UpdateFromQuery | 1 ms           | 1 ms           | 1 ms           |
+| <a href="/delete-from-query">DeleteFromQuery</a> | 1 ms           | 1 ms           | 1 ms           |
+| <a href="/update-from-query">UpdateFromQuery</a> | 1 ms           | 1 ms           | 1 ms           |
 
 ### Support
 - SQL Server 2008+
