@@ -46,7 +46,7 @@ bulk.BulkMerge(customers);
 
 Yes,
 
-That's why people feel in love so quickly with our library.
+That's why people fall in love so quickly with our library.
 
 ## Installing
 Download the <a href="/download">NuGet Package</a>
