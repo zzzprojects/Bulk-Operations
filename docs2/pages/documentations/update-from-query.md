@@ -9,8 +9,8 @@ var bulk = new BulkOperation<Customer>(connection);
 
 // UPDATE all customers inactive for more than 2 years
 bulk.UpdateFromQuery(
-    c => c.Where(x => x.Actif && x.LastLogin < DateTime.Now.AddYears(-2)),
-    c => new Customer {Actif = false});
+    c => c.Where(x => x.IsActive && x.LastLogin < DateTime.Now.AddYears(-2)),
+    c => new Customer {IsActive = false});
 ```
 
 ### Performance Benchmarks
