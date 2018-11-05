@@ -15,4 +15,4 @@ You can extend your trial for several months by downloading the latest version a
 There is no free version.
 
 ### How can I purchase a license?
-A perpetual license can be purchased from here: <a href="http://bulk-operations.net/#pro">Buy</a>
+A perpetual license can be purchased from here: <a href="https://bulk-operations.net/pricing">Buy</a>
