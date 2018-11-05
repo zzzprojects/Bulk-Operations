@@ -1,7 +1,7 @@
 # Eval.Execute
 
 ## Description
-You can execute C# expression at runtime using the [Eval-Expression.NET](http://eval-expression.net/) library.
+You can execute C# expression at runtime using the <a href="http://Eval-Expression.NET" target="_blank">Eval-Expression.NET</a> library.
 
 You can download it here: [Download](http://eval-expression.net/download)
 
