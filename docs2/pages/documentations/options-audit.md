@@ -1,9 +1,6 @@
 # Audit
 
-## Audit Options
-- [UseAudit](#useaudit)
-
-## UseAudit
+## UseAudit (Audit Options)
 Allow you to audit inserted/deleted rows from the database.
 
 - Default Value: False
