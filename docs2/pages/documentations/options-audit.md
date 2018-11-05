@@ -1,8 +1,5 @@
 # Audit
 
-## Audit Options
-- [UseAudit](#useaudit)
-
 ## UseAudit
 Allow you to audit inserted/deleted rows from the database.
 
