@@ -2,7 +2,7 @@
 
 ## Description
 
-The `BulkInsert` extension method let you insert a large number of entities in your database.
+The `BulkInsert` method let you insert a large number of entities in your database.
 
 ```csharp
 // Easy to use
