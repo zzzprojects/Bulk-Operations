@@ -52,14 +52,14 @@ The validate method allow you to know whether your license is valid or not.
 ```csharp
 // CHECK for default provider (SQL Server)
 string licenseErrorMessage;
-if (!Z.BulkOperations.LicenseManager.LicenseManager.ValidateLicense(out licenseErrorMessage))
+if (!Z.BulkOperations.LicenseManager.ValidateLicense(out licenseErrorMessage))
 {
     throw new Exception(licenseErrorMessage);
 }
 
 // CHECK for a specific provider
 string licenseErrorMessage;
-if (!Z.BulkOperations.LicenseManager.LicenseManager.ValidateLicense(out licenseErrorMessage, ProviderType.MySql))
+if (!Z.BulkOperations.LicenseManager.ValidateLicense(out licenseErrorMessage, ProviderType.MySql))
 {
    throw new Exception(licenseErrorMessage);
 }
