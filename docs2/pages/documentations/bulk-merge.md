@@ -158,12 +158,8 @@ More options can be found here:
 
 - [Audit](https://bulk-operations.net/audit)
 - [Batch](https://bulk-operations.net/batch)
-- [Column](https://bulk-operations.net/column)  *NEED TEXT** ==> n'existe pas!
 - [Execute Event](https://bulk-operations.net/execute-event)
-- [Identity](https://bulk-operations.net/identity) *NEED TEXT** ==> n'existe pas!
-- [Key](https://bulk-operations.net/key) *NEED TEXT** ==> n'existe pas!
-- [Logging](https://bulk-operations.net/logging) *NEED TEXT** ==> n'existe pas!
+- [Log](https://bulk-operations.net/log)
 - [Temporary Table](https://bulk-operations.net/temporary-table)
-- [Transaction](https://bulk-operations.net/transaction) *NEED TEXT** ==> n'existe pas!
 - [Transient Error](https://bulk-operations.net/transient-error)
 - [SQL Server](https://bulk-operations.net/sql-server)
