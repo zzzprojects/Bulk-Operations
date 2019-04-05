@@ -26,6 +26,7 @@ bulk.DestinationTableName = "InvoiceItems";
 bulk.BulkMerge(invoices.SelectMany(x => x.Items).ToList());
 ```
 [Try it (Entity)](https://dotnetfiddle.net/qpe8bV)
+
 [Try it (DataTable)](https://dotnetfiddle.net/rgugIj) 
 
 ### Performance Comparison
@@ -35,6 +36,7 @@ bulk.BulkMerge(invoices.SelectMany(x => x.Items).ToList());
 | BulkMerge       | 80 ms          | 110 ms         | 170 ms         |
 
 [Try this benchmark online (Entity)](https://dotnetfiddle.net/roGRsu)
+
 [Try this benchmark online (DataTable)](https://dotnetfiddle.net/CY5s3G)
 
 > HINT: A lot of factors might affect the benchmark time such as index, column type, latency, throttling, etc.
@@ -65,6 +67,7 @@ bulk.BulkMerge(customers);
 bulk.BulkMergeAsync(customers, cancellationToken);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/pigFx8)
+
 [Try it (DataTable)](https://dotnetfiddle.net/LULDpj) 
 
 ### Bulk Merge with options
@@ -75,6 +78,7 @@ bulk.ColumnPrimaryKeyExpression = c => c.Code;
 bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/5wMQ6X)
+
 [Try it (DataTable)](https://dotnetfiddle.net/JJIPCB)
 
 ## Real Life Scenarios
@@ -87,6 +91,7 @@ bulk.MergeKeepIdentity = true;
 bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/52uijH)
+
 [Try it (DataTable)](https://dotnetfiddle.net/gNXl1z) 
 
 ### Merge and include/exclude properties
@@ -114,6 +119,7 @@ bulk.ColumnPrimaryKeyExpression = c => c.Code
 bulk.BulkMerge(customers);    
 ```
 [Try it (Entity)](https://dotnetfiddle.net/Xlcdxq)
+
 [Try it (DataTable)](https://dotnetfiddle.net/9KOxdW) 
 
 ### Merge with related child entities
@@ -133,6 +139,7 @@ invoices.ForEach(x => x.Items.ForEach(y => y.InvoiceID = x.InvoiceID));
 bulk.BulkMerge(invoices);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/rhq5ZM)
+
 [Try it (DataTable)](https://dotnetfiddle.net/rhq5ZM) 
 
 ### More scenarios
