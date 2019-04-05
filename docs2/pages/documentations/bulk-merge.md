@@ -2,7 +2,7 @@
 
 ## Description
 
-The `BulkMerge` method let you merge (Insert or Update/Upsert) a large number of entities in your database.
+The `BulkMerge` method let you merge (insert or update/Upsert) a large number of entities in your database.
 
 ```csharp
 // Easy to use
