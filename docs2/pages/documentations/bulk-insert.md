@@ -10,20 +10,10 @@ bulk.DestinationTableName = "Customers";
 bulk.BulkInsert(customers);
 
 // Easy to customize
-bulk.DestinationTableName = "Invoices";
-bulk.ColumnOutputExpression = invoice => invoice.InvoiceID;
-bulk.ColumnInputExpression = invoice => new
-{
-	invoice.InvoiceID,
-	invoice.Number
-};
-
-bulk.BulkInsert(invoices);
-
-// SET foreign key value			
-invoices.ForEach(x => x.Items.ForEach(y => y.InvoiceID = x.InvoiceID));
-bulk.DestinationTableName = "InvoiceItems";
-bulk.BulkInsert(invoices.SelectMany(x => x.Items).ToList());
+bulk.DestinationTableName = "Customers";
+bulk.InsertIfNotExists = true;
+bulk.AutoMapOutputIdentity = true;
+bulk.BulkInsert(customers);
 ```
 
 [Try it (DataTable)](https://dotnetfiddle.net/UtvblA)
@@ -101,6 +91,7 @@ bulk.BulkInsert(customers);
 [Try it (Entity)](https://dotnetfiddle.net/04NuC3)
 
 ### Insert and include/exclude properties
+
 You want to insert your entities but only for specific properties.
 
 - `ColumnInputExpression`: This option let you choose which properties to map.
@@ -121,23 +112,30 @@ bulk.BulkInsert(customers);
 You want to insert entities but only those that don't already exist in the database.
 
 - `InsertIfNotExists`: This option let you insert only entity that doesn't already exists.
-- `PrimaryKeyExpression`: This option let you customize the key to use to check if the entity already exists or not.
+- `PrimaryKeyExpression`: This option let you customize the key to use to check if the entity already exists or not. This option disable the Auto Mapping.
+- `AutoMapKeyExpression`: This option let you customize the key with an expression and keep the Auto Mapping.
+- `AutoMapKeyName`: This option let you customize the key by names and keep the Auto Mapping.
 
 ```csharp
 bulk.InsertIfNotExists = true;
-bulk.ColumnPrimaryKeyExpression = c => c.Code;
+bulk.AutoMapKeyExpression = c => c.Code;
+bulk.BulkInsert(customers);
+```
+[Try it (Entity)](https://dotnetfiddle.net/DLMhLv)
+
+```csharp
+bulk.InsertIfNotExists = true;
+bulk.AutoMapKeyName = "Code";
 bulk.BulkInsert(customers);
 ```
 [Try it (DataTable)](https://dotnetfiddle.net/waYK0E)
-
-[Try it (Entity)](https://dotnetfiddle.net/DLMhLv)
 
 
 ### Insert related child entities
 You want to insert related child entities.
 
 ```csharp
-bulk.ColumnOutputExpression = invoice => invoice.InvoiceID;
+bulk.AutoMapOutputIdentity = true;
 bulk.BulkInsert(invoices);
 
 // SET foreign key value			
@@ -151,10 +149,10 @@ bulk.BulkInsert(invoices.SelectMany(x => x.Items).ToList());
 ### Insert with returning identity value
 By default, the `BulkInsert` method doesn't returns the identity when inserting.
 
-You can return the identity by specifying the column as `Output`.
+You can return the identity by specifying it should be returned.
 
 ```csharp
-bulk.ColumnOutputExpression = c => c.CustomerID;
+bulk.AutoMapOutputIdentity = true;
 bulk.BulkInsert(customers);
 ```
 [Try it (DataTable)](https://dotnetfiddle.net/g5pSS1)
