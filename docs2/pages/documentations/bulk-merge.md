@@ -140,10 +140,13 @@ You want to merge entities but also merge related child entities.
 ```csharp
 bulk.DestinationTableName = "Invoices";
 bulk.AutoMapOutputIdentity = true;
+bulk.BulkMerge(invoices);
 
 // SET foreign key value			
 invoices.ForEach(x => x.Items.ForEach(y => y.InvoiceID = x.InvoiceID));
-bulk.BulkMerge(invoices);
+
+bulk.DestinationTableName = "InvoiceItems";
+bulk.BulkMerge(invoices.SelectMany(x => x.Items).ToList());
 ```
 [Try it (Entity)](https://dotnetfiddle.net/LLDcvy)
 
