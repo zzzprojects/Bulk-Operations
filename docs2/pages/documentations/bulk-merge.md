@@ -10,20 +10,10 @@ bulk.DestinationTableName = "Customers";
 bulk.BulkMerge(customers);
 
 // Easy to customize
-bulk.DestinationTableName = "Invoices";
-bulk.ColumnOutputExpression = invoice => invoice.InvoiceID;
-bulk.ColumnInputExpression = invoice => new
-{
-	invoice.InvoiceID,
-	invoice.Number
-};
-
-bulk.BulkMerge(invoices);
-
-// SET foreign key value		
-invoices.ForEach(x => x.Items.ForEach(y => y.InvoiceID = x.InvoiceID));
-bulk.DestinationTableName = "InvoiceItems";
-bulk.BulkMerge(invoices.SelectMany(x => x.Items).ToList());
+bulk.DestinationTableName = "Customers";
+bulk.BatchSize = 100;
+bulk.AutoMapOutputDirection = true;
+bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/qpe8bV)
 
@@ -74,11 +64,15 @@ bulk.BulkMergeAsync(customers, cancellationToken);
 The `options` parameter let you use a lambda expression to customize the way entities are inserted/updated.
 
 ```csharp
-bulk.ColumnPrimaryKeyExpression = c => c.Code;
+bulk.AutoMapKeyExpression = c => c.Code;
 bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/5wMQ6X)
 
+```csharp
+bulk.AutoMapKeyName = "Code";
+bulk.BulkMerge(customers);
+```
 [Try it (DataTable)](https://dotnetfiddle.net/JJIPCB)
 
 ## Real Life Scenarios
@@ -111,34 +105,47 @@ bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/W4TJkK)
 
+```csharp
+var columnMapping = new ColumnMapping("CreatedDate");
+				
+columnMapping.IgnoreOnMergeUpdate = true;
+					
+bulk.ColumnMappings.Add("CustomerID", true);
+bulk.ColumnMappings.Add("UpdatedDate");
+bulk.ColumnMappings.Add("Name");
+bulk.ColumnMappings.Add(columnMapping);
+bulk.BulkMerge(dtCustomers);
+```
+[Try it (DataTable)](https://dotnetfiddle.net/TIfeSG)
+
 ### Merge with custom key
 You want to merge entities, but you don't have the primary key. The `ColumnPrimaryKeyExpression` let you use as a key any property or combination of properties.
 
 ```csharp
-bulk.ColumnPrimaryKeyExpression = c => c.Code
-bulk.BulkMerge(customers);    
+bulk.AutoMapKeyExpression = c => c.Code;
+bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/Xlcdxq)
 
+```csharp
+bulk.AutoMapKeyName = "Code";
+bulk.BulkMerge(customers);
+```
 [Try it (DataTable)](https://dotnetfiddle.net/9KOxdW) 
+
 
 ### Merge with related child entities
 You want to merge entities but also merge related child entities.
 
 ```csharp
 bulk.DestinationTableName = "Invoices";
-bulk.ColumnOutputExpression = invoice => invoice.InvoiceID;
-bulk.ColumnInputExpression = invoice => new
-{
-	invoice.InvoiceID,
-	invoice.Number
-};
+bulk.AutoMapOutputIdentity = true;
 
 // SET foreign key value			
 invoices.ForEach(x => x.Items.ForEach(y => y.InvoiceID = x.InvoiceID));
 bulk.BulkMerge(invoices);
 ```
-[Try it (Entity)](https://dotnetfiddle.net/rhq5ZM)
+[Try it (Entity)](https://dotnetfiddle.net/LLDcvy)
 
 [Try it (DataTable)](https://dotnetfiddle.net/rhq5ZM) 
 
