@@ -100,7 +100,7 @@ info@zzzprojects.com
 
 | Name | Description | Example (DataTable) | Example (Entity) |
 | :--- | :----------  | :------ | :------ |
-| `BulkDelete<T>(items)` | Bulk delete entities in your database. | [Try it (Entity)](https://dotnetfiddle.net/a6Txdy) | [Try it (DataTable)](https://dotnetfiddle.net/srOJJ8) 
+| `BulkDelete<T>(items)` | Bulk delete entities in your database. | [Try it](https://dotnetfiddle.net/srOJJ8) | [Try it](https://dotnetfiddle.net/a6Txdy) |
 | `BulkDeleteAsync<T>(items)` | Bulk delete entities asynchronously in your database. | | |
 | `BulkDeleteAsync<T>(items, cancellationToken)` | Bulk delete entities asynchronously in your database. | | |
 
