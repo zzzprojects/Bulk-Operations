@@ -149,7 +149,7 @@ info@zzzprojects.com
 
 | Name | Description | Example (DataTable) | Example (Entity) |
 | :--- | :---------- | :------ | :------ |
-| `BulkUpdate<T>(items)` | Bulk update entities in your database. | [Try it (DataTable)](https://dotnetfiddle.net/jFMKu1) | [Try it (Entity)](https://dotnetfiddle.net/fuv4IV) |
+| `BulkUpdate<T>(items)` | Bulk update entities in your database. | [Try it](https://dotnetfiddle.net/jFMKu1) | [Try it](https://dotnetfiddle.net/fuv4IV) |
 | `BulkUpdateAsync<T>(items)` | Bulk update entities asynchronously in your database. | |
 | `BulkUpdateAsync<T>(items, cancellationToken)` | Bulk update entities asynchronously in your database. | |
 
