@@ -12,7 +12,7 @@ bulk.BulkMerge(customers);
 // Easy to customize
 bulk.DestinationTableName = "Customers";
 bulk.BatchSize = 100;
-bulk.AutoMapOutputDirection = true;
+bulk.AutoMapOutputIdentity = true;
 bulk.BulkMerge(customers);
 ```
 [Try it (Entity)](https://dotnetfiddle.net/qpe8bV)
