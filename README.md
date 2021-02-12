@@ -1,9 +1,5 @@
-## Improve SQL insert, update, delete and merge performance and overcome SqlBulkCopy limitations
- - Auditing
- - Case Sensitivity
- - Entity DataSource / Lambda Mapping
- - Output Value
- - And more...
+## What's Bulk Operations 
+It overcomes SqlBulkCopy limitations by adding high-performance bulk operations to insert, update, delete and merge.
 
 ##### Scalable
 SQL Server - Benchmarks
@@ -135,33 +131,31 @@ Support & Upgrades (1 year) | Yes
 Learn more about the **[PRO Version](https://bulk-operations.net/#pro)**
 
 ## Contribute
-The best way to contribute is by **spreading the word** about the library:
 
- - Blog it
- - Comment it
- - Fork it
- - Star it
- - Share it
+You want to help us? 
+Your donation directly helps us maintaining and growing ZZZ Free Projects. We can’t thank you enough for your support.
+
+### Why should I contribute to this free & open source library?
+We all love free and open source libraries!
+But there is a catch! Nothing is free in this world.
+Contributions allow us to spend more of our time on: Bug Fix, Content Writing, Development and Support.
+
+We NEED your help. Last year alone, we spent over **3000 hours** maintaining all our open source libraries.
+
+### How much should I contribute?
+Any amount is much appreciated. All our libraries together have more than 100 million downloads, if everyone could contribute a tiny amount, it would help us to make the .NET community a better place to code!
+
+Another great free way to contribute is  **spreading the word** about the library!
  
 A **HUGE THANKS** for your help.
 
 ## More Projects
 
-**Entity Framework**
 - [EntityFramework Extensions](https://entityframework-extensions.net/)
-- [EntityFramework Plus](https://entityframework-plus.net)
-
-**Bulk Operations**
-- [Bulk Operations](https://bulk-operations.net/)
 - [Dapper Plus](https://dapper-plus.net/)
-
-**Expression Evaluator**
-- [Eval-SQL.NET](https://eval-sql.net/)
-- [Eval-Expression.NET](https://eval-expression.net/)
-
-**Utilities**
-- [Extension Methods Library](https://github.com/zzzprojects/Z.ExtensionMethods/)
-- [Html Agility Pack](https://html-agility-pack.net/)
+- [C# Eval Expression](https://eval-expression.net/)
+- and much more! 
+To view all our free and paid librariries visit our [website](https://zzzprojects.com/).
 
 **Need more info?** info@zzzprojects.com
 
