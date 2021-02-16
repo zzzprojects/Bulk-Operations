@@ -1,4 +1,4 @@
-## What's Bulk Operations 
+## What's Bulk Operations?
 It overcomes SqlBulkCopy limitations by adding high-performance bulk operations to insert, update, delete and merge.
 
 ##### Scalable
@@ -41,7 +41,7 @@ PM> Install-Package Z.BulkOperations
 
 _* PRO Version unlocked for the current month_
 
-Stay updated with latest changes
+Stay updated with the latest changes:
 
 <a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
 <a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
@@ -49,7 +49,7 @@ Stay updated with latest changes
 ## Insert - Output Identity Value
 
 ##### Problem
-You need to output newly generated identity value but SqlBulkCopy do not support it.
+You need to output newly generated identity value, but SqlBulkCopy does not support it.
 
 ##### Solution
 Map your identity column with output direction.
@@ -64,14 +64,14 @@ bulk.BulkInsert(dt);
 ```
 
 ##### Flexibility
-You can also output concurrency column (Timestamp) or any other column values. All kind of mapping direction are supported including "Formula" to use with a SQL Formula.
+You can also output concurrency column (Timestamp) or any other column values. All kinds of mapping directions are supported, including "Formula" to use with a SQL Formula.
 
 ## Entity DataSource / Lambda Mapping
 ##### Problem
-You have a list of entity to insert but SqlBulkCopy doesn't support entity and lambda expression mapping.
+You have a list of entities to insert, but SqlBulkCopy doesn't support entity and lambda expression mapping.
 
 ##### Solution
-Create a generic bulk operations with your entity type and use lambda expression for your column input, output and primary key mapping.
+Create generic bulk operations with your entity type and use lambda expression for your column input, output, and primary key mapping.
 
 ```csharp
 var bulk = new BulkOperation<Customer>(connection);
@@ -88,7 +88,7 @@ Get rid of hardcoded string and use strongly-typed lambda expressions.
 
 ## AutoMapping & Case Sensitivity
 ##### Problem
-You have a DataTable which columns name match name in the database but SqlBulkCopy throw an error because name match are case insensitive.
+You have a DataTable which columns name match name in the database but SqlBulkCopy throws an error because name matches are case insensitive.
 
 ##### Solution
 Turn off case sensitivity with **IsCaseSensitive** property.
@@ -102,7 +102,7 @@ bulk.BulkMerge(dt);
 ```
 
 ##### Readability
-Remove useless code which would have required to create your own mapping and keep the essentials.
+Remove useless code that would have required you to create your own mapping and keep the essentials.
 
 ## Support
 Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
