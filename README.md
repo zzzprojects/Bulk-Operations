@@ -44,7 +44,7 @@ _* PRO Version unlocked for the current month_
 ## Insert - Output Identity Value
 
 ##### Problem
-You need to output newly generated identity value, but SqlBulkCopy does not support it.
+You need to output the newly generated identity value, but SqlBulkCopy does not support it.
 
 ##### Solution
 Map your identity column with output direction.
@@ -83,7 +83,7 @@ Get rid of hardcoded string and use strongly-typed lambda expressions.
 
 ## AutoMapping & Case Sensitivity
 ##### Problem
-You have a DataTable which columns name match name in the database but SqlBulkCopy throws an error because name matches are case insensitive.
+You have a DataTable which columns name match name in the database, but SqlBulkCopy throws an error because name matches are case insensitive.
 
 ##### Solution
 Turn off case sensitivity with **IsCaseSensitive** property.
@@ -99,13 +99,6 @@ bulk.BulkMerge(dt);
 ##### Readability
 Remove useless code that would have required you to create your own mapping and keep the essentials.
 
-## Support
-Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
-
-- info@zzzprojects.com
-- [Documentation](https://github.com/zzzprojects/Bulk-Operations/wiki)
-- [Issues / Questions](https://github.com/zzzprojects/Bulk-Operations/issues)
-
 ## PRO
 _PRO Version unlocked for the current month_
 
@@ -116,7 +109,7 @@ Bulk Update                 | Yes
 Bulk Delete                 | Yes
 Bulk Merge                  | Yes
 Bulk SaveChanges            | Yes
-Bulk Synchornize            | Yes
+Bulk Synchronize            | Yes
 DeleteFromQuery             | Yes
 UpdateFromQuery             | Yes
 Commercial License          | Yes
@@ -142,7 +135,7 @@ A **HUGE THANKS** for your help.
 - [C# Eval Expression](https://eval-expression.net/)
 - and much more! 
 
-To view all our free and paid librariries visit our [website](https://zzzprojects.com/).
+To view all our free and paid projects, visit our [website](https://zzzprojects.com/).
 
 **Need more info?** info@zzzprojects.com
 
