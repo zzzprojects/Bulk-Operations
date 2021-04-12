@@ -137,8 +137,8 @@ A **HUGE THANKS** for your help.
 
 ## More Projects
 
+- [Entity Framework Extensions](https://entityframework-extensions.net/)
 - [Dapper Plus](https://dapper-plus.net/)
-- [Bulk Operations](https://bulk-operations.net/)
 - [C# Eval Expression](https://eval-expression.net/)
 - and much more! 
 
