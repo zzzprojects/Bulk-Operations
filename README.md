@@ -1,5 +1,5 @@
 ## What's Bulk Operations?
-It overcomes SqlBulkCopy limitations by adding high-performance bulk operations to insert, update, delete and merge.
+Bulk Operations is a library that allows to overcomes SqlBulkCopy limitations by adding high-performance bulk operations to insert, update, delete and merge.
 
 ##### Scalable
 SQL Server - Benchmarks
@@ -40,11 +40,6 @@ PM> Install-Package Z.BulkOperations
 ```
 
 _* PRO Version unlocked for the current month_
-
-Stay updated with the latest changes:
-
-<a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
-<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
 ## Insert - Output Identity Value
 
@@ -135,7 +130,6 @@ The best way to contribute is by **spreading the word** about the library:
 
  - Blog it
  - Comment it
- - Fork it
  - Star it
  - Share it
  
@@ -143,15 +137,13 @@ A **HUGE THANKS** for your help.
 
 ## More Projects
 
-- [EntityFramework Extensions](https://entityframework-extensions.net/)
 - [Dapper Plus](https://dapper-plus.net/)
+- [Bulk Operations](https://bulk-operations.net/)
 - [C# Eval Expression](https://eval-expression.net/)
-- [Entity Framework Classic](https://entityframework-classic.net/)
-- [SQL Eval Function](https://eval-sql.net/)
-- [LINQ To SQL Plus](https://linqtosql-plus.net/)
 - and much more! 
+
 To view all our free and paid librariries visit our [website](https://zzzprojects.com/).
 
 **Need more info?** info@zzzprojects.com
 
-Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
+Contact our outstanding **[customer support](https://entityframework-extensions.net/contact-us)** for any request. We usually answer within the next day, hour, or minutes!
